@@ -1,20 +1,19 @@
-﻿//membres
-//livres
+﻿//livres
 //emprunts
 //bibliothèque
-namespace Program
+namespace ConsoleApp1
 {
     public class Membres
     {
-        string Nom;
-        string Prenom;
-        DateOnly DateNaissance;
+        public string Nom;
+        public string Prenom;
+        public string DateNaissance;
 
-        public Membres(string nom, string prenom, DateOnly dateNaissance)
+        public Membres(string nom, string prenom, string dateNaissance)
         {
-            Nom = nom;
-            Prenom = prenom;
-            DateNaissance = dateNaissance;
+            this.Nom = nom;
+            this.Prenom = prenom;
+            this.DateNaissance = dateNaissance;
         }
 
         public override string ToString()
@@ -22,5 +21,6 @@ namespace Program
             string toString = String.Format($"Le membre se nomm {this.Prenom} {this.Nom}\nil est née :{this.DateNaissance}");
             return toString;
         }
+
     }
 }
