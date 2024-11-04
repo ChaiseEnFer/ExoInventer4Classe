@@ -22,10 +22,10 @@ namespace ConsoleApp1
 
             Console.WriteLine($"Durée d'emprunt : {emprunt.CalculerDuree().Days} jours");
 
-            // Simuler le retour du livre après quelques jours
+ 
             emprunt.DateRetour = new DateTime(2023, 11, 4);
 
-            // Recalculer la durée après le retour du livre
+
             Console.WriteLine($"Durée d'emprunt après retour : {emprunt.CalculerDuree().Days} jours");
         }
 
