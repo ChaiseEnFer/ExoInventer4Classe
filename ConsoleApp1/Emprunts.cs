@@ -21,6 +21,10 @@ public class Emprunt
         TimeSpan tempsEmprunt = dateFin - DateEmprunt; // Calcule la durée
         return tempsEmprunt;
     }
+    public void RetournerLivre(DateTime dateRetour)
+    {
+        DateRetour = dateRetour;
+    }
 
     public override string ToString()
     {
