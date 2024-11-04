@@ -1,5 +1,4 @@
-﻿//livres
-//emprunts
+﻿//emprunts
 //bibliothèque
 namespace ConsoleApp1
 {
@@ -7,9 +6,9 @@ namespace ConsoleApp1
     {
         public string Nom;
         public string Prenom;
-        public string DateNaissance;
+        public DateTime DateNaissance;
 
-        public Membres(string nom, string prenom, string dateNaissance)
+        public Membres(string nom, string prenom, DateTime dateNaissance)
         {
             this.Nom = nom;
             this.Prenom = prenom;
@@ -18,7 +17,7 @@ namespace ConsoleApp1
 
         public override string ToString()
         {
-            string toString = String.Format($"Le membre se nomm {this.Prenom} {this.Nom}\nil est née :{this.DateNaissance}");
+            string toString = String.Format($"Le membre se nom {this.Prenom} {this.Nom}\nil est née :{DateNaissance.ToString("dd MMMM yyyy")}");
             return toString;
         }
 

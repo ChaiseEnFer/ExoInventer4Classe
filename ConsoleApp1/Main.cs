@@ -10,9 +10,9 @@ namespace ConsoleApp1
     {
         private static void Main(string[] args)
         {
-            Membres Jack = new Membres("Huber", "Jack", "02-02-1998" );
-            Membres Emeline = new Membres("Hugues", "Emeline", "12-12-2005" );
-            Membres Chaise = new Membres("Table", "Chaise", "29-05-1985" );
+            Membres Jack = new Membres("Huber", "Jack", new DateTime(25, 2, 2006));
+            Membres Emeline = new Membres("Hugues", "Emeline", new DateTime(02, 7, 1989));
+            Membres Chaise = new Membres("Table", "Chaise", new DateTime(18,10,1998));
 
             Livres ChatBotté = new Livres(1628, "Charles Perrault","978-987-25620-2-1", "Chat Botté");
             Livres CyranoDeBergerac = new Livres(1628, "Edmond Rostand", "956-974-245731-3-2", "Cyrano De Bergerac");
