@@ -23,7 +23,7 @@ namespace ConsoleApp1
 
         private string AfficherInfos()
         {
-            string Infos = String.Format($"Le livre : {this.Titre}\nécrit par : {this.Auteur}\npublié en : {AnneePublication}\n Numéro personnel et unique d’un livre : {this.ISBN}"); //rajouter le lien quand y aura la classe Emprunt
+            string Infos = String.Format($"Le livre : {this.Titre}\nécrit par : {this.Auteur}\npublié en : {AnneePublication}\n Numéro personnel et unique d’un livre : {this.ISBN}"); //rajouter le lien quand y aura la classe Emprunt et mettre cte ligne dans le ToString()
             return Infos;
 
         }
